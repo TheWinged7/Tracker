@@ -1,5 +1,6 @@
 {
    "Total":50,
+   "weekReward":50
    "week":[
       {
          "day":"mon",
@@ -30,5 +31,6 @@
          "comp":true
       }
    ],
-   "weekGoal":3
+   "weekGoal":3,
+   "paydayGoal":2500
 }
