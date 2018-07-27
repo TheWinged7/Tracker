@@ -3,19 +3,121 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.Material">
     <LinearLayout
         android:id="@+id/goalbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <TextView
             android:id="@+id/current_total"
             android:textSize="25dp"
             android:text="PLACEHOLDER"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center" />
+            android:gravity="center_horizontal"
+            android:layout_marginTop="0.0dp"
+            android:layout_marginBottom="@dimen/abc_text_size_title_material" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/goal_total"
+            android:textSize="18sp"
+            android:text="GOAL_PLACEHOLDER" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonsbox"
+        android:layout_below="@id/goalbox">
+        <Button
+            android:text="Set Goal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/set_goal_button" />
+        <Button
+            android:text="Day Completed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/day_ding" />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/reminder_button"
+            android:layout_gravity="right"
+            android:text="Reminder"
+            android:textOn="Reminder Set"
+            android:textOff="Reminder Off" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weekbox"
+        android:gravity="bottom"
+        android:layout_below="@id/buttonsbox">
+        <CheckBox
+            android:text="@string/mon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mon_check" />
+        <CheckBox
+            android:text="@string/tue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tue_check" />
+        <CheckBox
+            android:text="@string/wed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/wed_check" />
+        <CheckBox
+            android:text="@string/thu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/thu_check" />
+        <CheckBox
+            android:text="@string/fri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fri_check" />
+        <CheckBox
+            android:text="@string/sat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sat_check" />
+        <CheckBox
+            android:text="@string/sun"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/sun_check" />
+        <GridLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/trackbox"
+            android:paddingStart="@dimen/abc_dialog_padding_material"
+            android:paddingEnd="@dimen/abc_dialog_padding_material">
+            <TextView
+                android:text="WEEK_GOAL"
+                android:id="@+id/week_goal"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:text="WEEK_TOTAL"
+                android:id="@+id/week_total"
+                android:layout_column="3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </GridLayout>
     </LinearLayout>
 </RelativeLayout>
