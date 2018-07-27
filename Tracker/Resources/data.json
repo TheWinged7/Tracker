@@ -1,5 +1,6 @@
 {
-   "Total":50,
+   "totalGoal":3000
+   "total":100,
    "weekReward":50,
    "week":[
       {
@@ -8,27 +9,27 @@
       },
       {
          "day":"tue",
-         "comp":true
+         "comp":false
       },
       {
          "day":"wed",
-         "comp":true
+         "comp":false
       },
       {
          "day":"thu",
-         "comp":true
+         "comp":false
       },
       {
          "day":"fri",
-         "comp":true
+         "comp":false
       },
       {
          "day":"sat",
-         "comp":true
+         "comp":false
       },
       {
          "day":"sun",
-         "comp":true
+         "comp":false
       }
    ],
    "weekGoal":3,
