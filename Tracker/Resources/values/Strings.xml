@@ -9,4 +9,5 @@
     <string name="fri">Friday</string>
     <string name="sat">Saturday</string>
     <string name="sun">Sunday</string>
-</resources>
+    <string name="goal_total">GOAL_PLACEHOLDER</string>
+</resources> 

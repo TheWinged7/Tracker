@@ -1,0 +1,17 @@
+{
+  "totalGoal": 3000,
+  "total": 100,
+  "weekReward": 50,
+  "week": [
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "weekGoal": 3,
+  "paydayGoal": 2500
+}
+ 

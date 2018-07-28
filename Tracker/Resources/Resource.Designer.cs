@@ -3081,6 +3081,9 @@ namespace Tracker
 			// aapt resource value: 0x7f09002f
 			public const int fri = 2131296303;
 			
+			// aapt resource value: 0x7f090032
+			public const int goal_total = 2131296306;
+			
 			// aapt resource value: 0x7f09002b
 			public const int mon = 2131296299;
 			
