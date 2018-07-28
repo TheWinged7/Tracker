@@ -19,6 +19,7 @@ namespace Tracker
         protected TextView goal, current, weekGoal, weekCurrent;
         protected CheckBox mon, tue, wed, thu, fri, sat, sun;
         protected Button setGoal, dayCompleted;
+        protected int count = 0;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -37,7 +38,7 @@ namespace Tracker
             //week = json.Get("week");
 
             initUI(raw);
-             
+
 
 
         }
@@ -68,12 +69,24 @@ namespace Tracker
             sat.Checked = jweek.GetBoolean(5);
             sun.Checked = jweek.GetBoolean(6);
 
+            mon.Clickable = false;
+            tue.Clickable = false;
+            wed.Clickable = false;
+            thu.Clickable = false;
+            fri.Clickable = false;
+            sat.Clickable = false;
+            sun.Clickable = false;
+
 
 
             goal.Text = "$" + json.GetString("totalGoal");
             current.Text = "$" + json.GetString("total");
             weekGoal.Text = json.GetString("weekGoal") + " Days";
-            weekCurrent.Text = "$" + json.GetString("totalGoal") + " Days";
+            for (int i = 0; i < jweek.Length(); i++){
+                if (jweek.GetBoolean(i))
+                    count++;
+            }
+            weekCurrent.Text = +count + " Days";
 
         }
     }
