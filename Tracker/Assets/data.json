@@ -2,8 +2,9 @@
   "totalGoal": 3000,
   "total": 150,
   "weekReward": 50,
+  "bonus": 150,
   "week": [
-    true,
+    false,
     false,
     false,
     false,
