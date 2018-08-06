@@ -1,6 +1,8 @@
 {
-  "totalGoal": 3000,
+  "totalGoal": 1325,
   "total": 150,
+  "minGoal":587,
+  "+ssd":726,
   "weekReward": 50,
   "bonus": 150,
   "week": [
